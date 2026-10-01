@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Portafolio | Universidad Horizonte</title>
+<meta name="description" content="Universidad Horizonte: conoce nuestras carreras, descubre cuál va contigo y comienza tu proceso de admisión.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="index.html"><span class="mark">H</span>Universidad Horizonte</a>
+<nav aria-label="Principal"><ul id="menu"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="portafolio.html" aria-current="page">Portafolio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul></nav>
+<div class="tools"><button class="icon-btn" id="tema-btn" aria-pressed="false">🌙 Oscuro</button>
+<button class="icon-btn" id="menu-btn" aria-expanded="false" aria-controls="menu">☰ Menú</button></div>
+</div></header>
+<main>
+<div class="wrap page-title"><h1>Portafolio académico</h1><p>Filtra por área y pulsa «Ver información» para saber qué se estudia, dónde se trabaja y un dato curioso de cada una.</p></div>
+<section><div class="wrap"><div class="filtros" role="group" aria-label="Filtrar por área">
+<button class="icon-btn" data-filtro="todo" aria-pressed="true">Todas</button><button class="icon-btn" data-filtro="ing" aria-pressed="false">⚙️ Ingeniería</button><button class="icon-btn" data-filtro="salud" aria-pressed="false">🩺 Salud</button><button class="icon-btn" data-filtro="humanas" aria-pressed="false">⚖️ Humanas</button><button class="icon-btn" data-filtro="negocios" aria-pressed="false">📊 Negocios</button><button class="icon-btn" data-filtro="diseno" aria-pressed="false">🎨 Diseño</button></div>
+<div class="grid" id="lista"></div>
+<p class="nota">La duración y las materias son orientativas y pueden cambiar según el plan de estudios vigente. Consulta los detalles con admisiones.</p></div></section>
+<section id="test"><div class="wrap"><h2>¿No sabes cuál elegir?</h2><p class="lead">Este test no es un diagnóstico, es solo una guía para empezar a explorar.</p><div class="quiz" id="quiz"></div></div></section>
+</main>
+<dialog id="modal" aria-labelledby="m-titulo"></dialog>
+<footer><div class="wrap"><div class="cols">
+<div><h3>Universidad Horizonte</h3><p>Formamos profesionales curiosos, críticos y comprometidos con su comunidad.</p></div>
+<div><h3>Navegación</h3><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="portafolio.html">Portafolio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+<div><h3>Admisiones</h3><ul><li>601 555 0140</li><li>admisiones@horizonte.example</li><li>Lunes a viernes, 8:00 a. m. a 5:00 p. m.</li></ul></div>
+</div><small>© 2026 Universidad Horizonte. Sitio de ejemplo con fines educativos: los datos de la institución son ficticios. La información de cada carrera es orientativa; confirma siempre el plan de estudios con la universidad.</small></div></footer>
+<script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es" data-theme="light">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contacto | Universidad Horizonte</title>
+<meta name="description" content="Universidad Horizonte: conoce nuestras carreras, descubre cuál va contigo y comienza tu proceso de admisión.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@700;800&family=DM+Sans:wght@400;600;700&display=swap">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header><div class="wrap bar">
+<a class="logo" href="index.html"><span class="mark">H</span>Universidad Horizonte</a>
+<nav aria-label="Principal"><ul id="menu"><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="portafolio.html">Portafolio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html" aria-current="page">Contacto</a></li></ul></nav>
+<div class="tools"><button class="icon-btn" id="tema-btn" aria-pressed="false">🌙 Oscuro</button>
+<button class="icon-btn" id="menu-btn" aria-expanded="false" aria-controls="menu">☰ Menú</button></div>
+</div></header>
+<main>
+<div class="wrap page-title"><h1>Contacto</h1><p>Cuéntanos qué te interesa y un asesor te responderá en menos de 24 horas.</p></div>
+<section><div class="wrap"><div class="split">
+<form id="form-contacto" novalidate>
+<div><label for="nombre">Nombre completo</label><input id="nombre" name="nombre" autocomplete="name"><span class="err" id="err-nombre"></span></div>
+<div><label for="correo">Correo electrónico</label><input id="correo" name="correo" type="email" autocomplete="email"><span class="err" id="err-correo"></span></div>
+<div><label for="telefono">Teléfono (opcional)</label><input id="telefono" name="telefono" type="tel" autocomplete="tel"><span class="err" id="err-telefono"></span></div>
+<div><label for="programa">Carrera de interés</label><select id="programa" name="programa"><option>Aún no lo sé</option><option>Ingeniería de Sistemas</option><option>Ingeniería Civil</option><option>Medicina</option><option>Enfermería</option><option>Derecho</option><option>Psicología</option><option>Administración de Empresas</option><option>Contaduría Pública</option><option>Diseño Gráfico</option><option>Arquitectura</option></select></div>
+<div><label for="mensaje">Mensaje</label><textarea id="mensaje" name="mensaje" rows="5"></textarea><span class="err" id="err-mensaje"></span></div>
+<button class="btn" type="submit">Enviar mensaje</button><p id="estado" role="status"></p></form>
+<aside><h2>Escríbenos o visítanos</h2><ul class="info"><li>📞 601 555 0140</li><li>✉️ admisiones@horizonte.example</li><li>🕗 Lunes a viernes, 8:00 a. m. a 5:00 p. m.</li><li>🏫 Campus principal: Calle 10 # 20-30, edificio de Admisiones</li><li>🗓️ Visitas guiadas los sábados a las 10:00 a. m.</li></ul></aside>
+</div></div></section>
+</main>
+<dialog id="modal" aria-labelledby="m-titulo"></dialog>
+<footer><div class="wrap"><div class="cols">
+<div><h3>Universidad Horizonte</h3><p>Formamos profesionales curiosos, críticos y comprometidos con su comunidad.</p></div>
+<div><h3>Navegación</h3><ul><li><a href="index.html">Inicio</a></li><li><a href="nosotros.html">Quiénes somos</a></li><li><a href="portafolio.html">Portafolio</a></li><li><a href="servicios.html">Servicios</a></li><li><a href="contacto.html">Contacto</a></li></ul></div>
+<div><h3>Admisiones</h3><ul><li>601 555 0140</li><li>admisiones@horizonte.example</li><li>Lunes a viernes, 8:00 a. m. a 5:00 p. m.</li></ul></div>
+</div><small>© 2026 Universidad Horizonte. Sitio de ejemplo con fines educativos: los datos de la institución son ficticios. La información de cada carrera es orientativa; confirma siempre el plan de estudios con la universidad.</small></div></footer>
+<script src="script.js"></script>
+</body>
+</html>
